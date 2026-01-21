@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta configuration -->
+  <meta charset="UTF-8">
+  <title>GTG Perfumes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="first">
+
+    <!-- Header with logo, navigation, and actions -->
+    <header class="header">
+      <div class="header-container">
+
+        <!-- Brand logo -->
+        <div class="logo">
+          <img src="images/GTG.png" alt="GTG Logo">
+        </div>
+
+        <!-- Primary navigation menu -->
+        <nav class="nav" id="navMenu">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Fragrances</a>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <!-- Header action icons -->
+        <div class="header-actions">
+          <button class="search-icon">
+            <img src="images/search.png" alt="Search">
+          </button>
+
+          <a href="#" class="header-shop">
+            <img src="images/shopnow.png" alt="Shop Now">
+          </a>
+
+          <!-- Mobile hamburger menu -->
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Hero banner content -->
+    <div class="first-content">
+      <img src="images/live.png" alt="Live your best life" class="first-live">
+      <a href="#" class="first-shop">
+        <img src="images/shopnow.png" alt="Shop Now">
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= PRODUCT DETAILS SECTION ================= -->
+  <section class="second">
+    <div class="second-container">
+
+      <!-- Product image gallery -->
+      <aside class="second-left">
+        <div class="product-gallery">
+
+          <!-- Main gallery display -->
+          <div class="gallery-main">
+            <img id="mainImage" src="images/violet background.png" alt="Product Image">
+
+            <!-- Gallery navigation arrows -->
+            <button class="gallery-arrow left" data-direction="prev">‹</button>
+
+            <!-- Image indicator dots -->
+            <div class="gallery-dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+            </div>
+
+            <button class="gallery-arrow right" data-direction="next">›</button>
+          </div>
+
+          <!-- Thumbnail image grid -->
+          <div class="gallery-grid">
+            <img src="images/p1.png" data-image="images/p1.png">
+            <img src="images/p2.png" data-image="images/p2.png">
+            <img src="images/p3.png" data-image="images/p3.png">
+            <img src="images/p4.png" data-image="images/p4.png">
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- Subscription selection panel -->
+      <aside class="second-right">
+        <div class="right-wrapper">
+
+          <!-- Product title branding -->
+          <div class="title-box">
+            <img src="images/gtgperfume.png" alt="GTG Perfumes">
+          </div>
+
+          <!-- ================= SINGLE SUBSCRIPTION ================= -->
+          <div class="subscription-card popular">
+
+            <!-- Highlight badge -->
+            <div class="badge">
+              <img src="images/rectangle.png" alt="">
+              <span>Most Popular</span>
+            </div>
+
+            <!-- Subscription type selector -->
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="purchase" value="single" checked>
+                <span>Single Subscription</span>
+                <span class="price">$99.99 <del>$146</del></span>
+              </label>
+            </div>
+
+            <hr>
+
+            <!-- Single subscription content -->
+            <div id="singleContent">
+
+              <p class="section-title">Choose a Fragrance</p>
+
+              <!-- Fragrance options -->
+              <div class="fragrance-options">
+                <label>
+                  <input type="radio" name="fragrance" data-image="images/violet.png" checked>
+                  <span>Original</span>
+                  <img src="images/violet.png">
+                </label>
+
+                <label>
+                  <input type="radio" name="fragrance" data-image="images/purple.png">
+                  <span>Lily</span>
+                  <img src="images/purple.png">
+                </label>
+
+                <label>
+                  <input type="radio" name="fragrance" data-image="images/orange.png">
+                  <span>Rose</span>
+                  <img src="images/orange.png">
+                </label>
+              </div>
+
+              <p class="section-title">What’s Included</p>
+
+              <!-- Included items visuals -->
+              <div class="included-row">
+                <img src="images/every30.png" class="included-small">
+                <img src="images/onetime.png" class="included-large">
+              </div>
+
+              <img src="images/single.png" class="included-full">
+
+            </div>
+          </div>
+
+          <!-- ================= DOUBLE SUBSCRIPTION ================= -->
+          <div class="subscription-card">
+
+            <label class="radio-row">
+              <input type="radio" name="purchase" value="double">
+              <span>Double Subscription</span>
+              <span class="price">$169.99 <del>$146</del></span>
+            </label>
+
+            <!-- Double subscription content -->
+            <div id="doubleContent" class="hidden">
+
+              <p class="section-title">Choose Fragrance 1</p>
+              <div class="fragrance-options">
+                <label>
+                  <input type="radio" name="fragrance" data-image="images/violet.png" checked>
+                  <span>Original</span>
+                  <img src="images/violet.png">
+                </label>
+
+                <label>
+                  <input type="radio" name="fragrance" data-image="images/purple.png">
+                  <span>Lily</span>
+                  <img src="images/purple.png">
+                </label>
+
+                <label>
+                  <input type="radio" name="fragrance" data-image="images/orange.png">
+                  <span>Rose</span>
+                  <img src="images/orange.png">
+                </label>
+              </div>
+
+              <p class="section-title">Choose Fragrance 2</p>
+              <div class="fragrance-options">
+                <label>
+                  <input type="radio" name="fragrance" data-image="images/violet.png" checked>
+                  <span>Original</span>
+                  <img src="images/violet.png">
+                </label>
+
+                <label>
+                  <input type="radio" name="fragrance" data-image="images/purple.png">
+                  <span>Lily</span>
+                  <img src="images/purple.png">
+                </label>
+
+                <label>
+                  <input type="radio" name="fragrance" data-image="images/orange.png">
+                  <span>Rose</span>
+                  <img src="images/orange.png">
+                </label>
+              </div>
+
+              <div class="included-row">
+                <img src="images/every30.png" class="included-small">
+                <img src="images/onetime.png" class="included-large">
+              </div>
+
+              <img src="images/single.png" class="included-full">
+
+            </div>
+          </div>
+
+          <!-- Add to cart action -->
+          <a href="#" class="add-to-cart">
+            <img src="images/addcart.png" alt="Add to Cart">
+          </a>
+
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ================= BRAND VISUAL SECTION ================= -->
+  <section class="third">
+    <div class="third-container">
+      <img src="images/third.png" class="third-img">
+    </div>
+  </section>
+
+  <!-- ================= STATISTICS SECTION ================= -->
+  <section class="four">
+    <div class="green-wrapper">
+
+      <img src="images/green.png" class="green-img" alt="Statistics background">
+
+      <!-- Animated statistics counters -->
+      <div class="green-stats">
+
+        <div class="stat-item">
+          <span class="counter" data-target="85">0%</span>
+          <img src="images/text.png" alt="Text">
+        </div>
+
+        <div class="stat-item">
+          <span class="counter" data-target="72">0%</span>
+          <img src="images/text.png" alt="Text">
+        </div>
+
+        <div class="stat-item">
+          <span class="counter" data-target="90">0%</span>
+          <img src="images/text.png" alt="Text">
+        </div>
+
+        <div class="stat-item">
+          <span class="counter" data-target="68">0%</span>
+          <img src="images/text.png" alt="Text">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= COMPARISON TABLE ================= -->
+  <section class="five">
+    <div class="five-container">
+
+      <h2 class="five-title">Why GTG is the #1 Choice</h2>
+
+      <div class="table-wrapper">
+        <table class="comparison-table">
+
+          <!-- Table header -->
+          <thead>
+            <tr>
+              <th class="feature"></th>
+              <th class="highlight">
+                <img src="images/group.png" alt="GTG">
+              </th>
+              <th><img src="images/p1.png"><span>Arose</span></th>
+              <th><img src="images/p3.png"><span>Bella</span></th>
+              <th><img src="images/p4.png"><span>Daisies</span></th>
+            </tr>
+          </thead>
+
+          <!-- Table body -->
+          <tbody>
+            <!-- Feature comparison rows -->
+            <tr>
+              <td class="feature">Potency Concentration</td>
+              <td class="highlight">10x</td>
+              <td>1x</td>
+              <td>1x</td>
+              <td>10x</td>
+            </tr>
+            <tr>
+              <td class="feature">Longevity</td>
+              <td class="highlight check">✔</td>
+              <td class="cross">✕</td>
+              <td class="cross">✕</td>
+              <td class="check">✔</td>
+            </tr>
+            <tr>
+              <td class="feature">Sillage</td>
+              <td class="highlight check">✔</td>
+              <td class="cross">✕</td>
+              <td class="cross">✕</td>
+              <td class="cross">✕</td>
+            </tr>
+            <tr>
+              <td class="feature">Bottle Design Score</td>
+              <td class="highlight">9</td>
+              <td>5</td>
+              <td>6</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td class="feature">Blend & Harmony</td>
+              <td class="highlight check">✔</td>
+              <td class="cross">✕</td>
+              <td class="cross">✕</td>
+              <td class="cross">✕</td>
+            </tr>
+            <tr>
+              <td class="feature">Skin Compatibility</td>
+              <td class="highlight check">✔</td>
+              <td class="cross">✕</td>
+              <td class="cross">✕</td>
+              <td class="cross">✕</td>
+            </tr>
+            <tr>
+              <td class="feature">Scent Profile</td>
+              <td class="highlight check">✔</td>
+              <td class="check">✔</td>
+              <td class="cross">✕</td>
+              <td class="cross">✕</td>
+            </tr>
+            <tr>
+              <td class="feature">Price vs Quality</td>
+              <td class="highlight check">✔</td>
+              <td class="check">✔</td>
+              <td class="cross">✕</td>
+              <td class="check">✔</td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+
+      <a href="#" class="five-btn">Try It Risk-Free</a>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <section class="footer">
+    <img src="images/footer.png" class="footer-img">
+  </section>
+
+  <!-- JavaScript file -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
